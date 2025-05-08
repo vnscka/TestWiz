@@ -6,7 +6,6 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import ProfilePage from "./pages/ProfilePage";
-import ApiKeySetup from "./pages/ApiKeySetup";
 import GenerateQuiz from "./pages/GenerateQuiz";
 import DescriptiveQuiz from "./pages/DescriptiveQuiz";
 import CombinedExam from "./pages/CombinedExam";
@@ -30,7 +29,6 @@ const App = () => (
           <Route path="/welcome" element={<AuthChoice />} />
           <Route path="/register" element={<Register />} />
           <Route path="/login" element={<Login />} />
-          <Route path="/set-api-key" element={<ApiKeySetup />} />
           <Route path="/generate-quiz" element={<GenerateQuiz />} />
           <Route path="/descriptive-quiz" element={<DescriptiveQuiz />} />
           <Route path="/combined-exam" element={<CombinedExam />} />

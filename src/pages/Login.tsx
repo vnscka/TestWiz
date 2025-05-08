@@ -51,7 +51,7 @@ const Login = () => {
                             });
                 
                             // Redirect to the API key setup page after successful login
-                            navigate('/set-api-key'); // <--- Redirect
+                            navigate('/profile'); // <--- Redirect
                 
                 } else {
                              // Handle case where backend success but didn't return expected data

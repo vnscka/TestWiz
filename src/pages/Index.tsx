@@ -82,7 +82,7 @@ const Index = () => {
                 <Brain className="h-6 w-6 text-quiz-primary" />
               </div>
               <h3 className="text-xl font-semibold mb-2">AI-Powered</h3>
-              <p className="text-gray-600">Our quizzes are co-powered by Gemini and OpenAI, ensuring high-quality, relevant content tailored to your curriculum.</p>
+              <p className="text-gray-600">Our quizzes are powered by a versatile self-hosted AI, ensuring high-quality, relevant content tailored to your curriculum.</p>
             </div>
             
             <div className="quiz-card text-center">

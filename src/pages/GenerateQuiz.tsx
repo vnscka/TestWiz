@@ -31,18 +31,6 @@ const GenerateQuiz = () => {
     setIsLoading(true);
     setError('');
     
-    // Check if API key is set before attempting to generate quiz
-         // You might want a more robust check, e.g., fetching from localStorage
-         // or checking a context/state that confirms key setup.
-         // For now, a basic localStorage check based on your ApiKeySetup.tsx:
-    const apiKeySet = localStorage.getItem('user_id');
-    if (!apiKeySet) {
-      setError('Please set your AI connection key first.');
-      setIsLoading(false);
-      navigate('/set-api-key');
-      return;
-    }
-    
     try {
       const response = await fetch('http://localhost:3001/generate-quiz', { // <--- Use the full backend URL
         method: 'POST',
